@@ -34,6 +34,8 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
+        <maven-surefire-plugin.version>3.0.0-M4</maven-surefire-plugin.version>
+
         <maven.compiler.source>14</maven.compiler.source>
         <maven.compiler.target>14</maven.compiler.target>
 
@@ -55,9 +57,19 @@
                     <configuration>
                         <compilerArgs>
                             <arg>-Xlint:all,-options,-path</arg>
+                            <arg>--add-exports java.base/jdk.internal.foreign=ALL-UNNAMED</arg>
+                            <arg>--enable-preview</arg>
                         </compilerArgs>
                         <showWarnings>true</showWarnings>
                         <showDeprecation>true</showDeprecation>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>${maven-surefire-plugin.version}</version>
+                    <configuration>
+                        <argLine>--enable-preview</argLine>
                     </configuration>
                 </plugin>
             </plugins>
