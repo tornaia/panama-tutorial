@@ -1,2 +1,2 @@
 REM mingw-w64-install
-gcc -shared -static -o libhelloworld.dll -Wall helloworld.c
+gcc -shared -static -o helloworld.dll -Wall helloworld.c
