@@ -12,3 +12,7 @@
 
 * http://cr.openjdk.java.net/~mcimadamore/panama/jextract_distilled.html
 * https://github.com/openjdk/panama-foreign/blob/foreign-jextract/doc/panama_jextract.md
+
+#### Tutorials
+
+* 001 - Java calls C void method without parameters, C writes to console
