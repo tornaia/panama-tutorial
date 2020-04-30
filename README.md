@@ -16,3 +16,4 @@
 #### Tutorials
 
 * 001 - Java calls C void method without parameters, C writes to console
+* 002 - C returns the sum of the to passed int parameters
