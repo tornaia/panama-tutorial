@@ -2,7 +2,7 @@
 
 "I am always ready to learn, but I do not always like to be taught." – Winston Churchill
 
-##### Prerequisites
+#### Prerequisites
 
 * Windows 10 x64 
 * OpenJDK 14 build 14-panama+1-15 (https://jdk.java.net/panama/)
