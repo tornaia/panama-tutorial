@@ -18,14 +18,17 @@
 
 #### Building OpenJDK
 
+Only if you want to do it on your own. Since the actual OpenJDK-panama build is rather old I had to do this. I expected much more hassle!
+
 * Fresh Windows 10 installation: install all patches, disable UAC, antivirus, antimaleware
-** Hint: use VirtualBox (https://www.virtualbox.org/) with a free VM (https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/) to avoid interefences between your host/development environment and the OpenJDK build environment
+	* Hint: use VirtualBox (https://www.virtualbox.org/) with a free VM from MS
+(https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/) to avoid interefences between your host/development and the OpenJDK build environment
 * Cygwin (https://www.cygwin.com/)
-** default, git, autoconf, make, unzip, zip
+	* install default, git, autoconf, make, unzip and zip packages
 * Visual Studio 2017 Community Edition (https://www.techspot.com/downloads/downloadnow/6278/?evp=ec1cdb914a1b435daaf013a4a084b093&file=1)
-** default, Desktop development with C++
-* OpenJDK 14.0.1 (https://jdk.java.net/14/)
-* Git clone https://github.com/openjdk/panama-foreign.git
+	* install default and "Desktop development with C++" package
+* OpenJDK 14.0.1 (https://jdk.java.net/14/) as Bootstrap JDK
+* git clone https://github.com/openjdk/panama-foreign.git
 * bash configure
 * make images
 
