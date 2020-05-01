@@ -21,7 +21,7 @@
 Only if you want to do it on your own. Since the actual OpenJDK-panama build is rather old I had to do this. I expected much more hassle!
 
 * Fresh Windows 10 installation: install all patches, disable UAC, antivirus, antimaleware
-	* Hint: use VirtualBox (https://www.virtualbox.org/) with a free VM from MS
+	* hint: use VirtualBox (https://www.virtualbox.org/) with a free VM from MS
 (https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/) to avoid interefences between your host/development and the OpenJDK build environment
 * Cygwin (https://www.cygwin.com/)
 	* install default, git, autoconf, make, unzip and zip packages
