@@ -7,6 +7,7 @@
 * Windows 10 x64 
 * Build OpenJDK-panama (01.05.2020) or OpenJDK 14 build 14-panama+1-15 (https://jdk.java.net/panama/)
 * Mingw-w64 (http://mingw-w64.org/)
+* LLVM (https://releases.llvm.org/download.html)
 
 #### Building OpenJDK
 
