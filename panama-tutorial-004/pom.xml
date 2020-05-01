@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>panama-tutorial-004</artifactId>
+    <version>0.1-SNAPSHOT</version>
+    <name>Panama Tutorial 004</name>
+
+    <parent>
+        <groupId>com.github.tornaia</groupId>
+        <artifactId>panama-tutorial-parent</artifactId>
+        <version>0.1-SNAPSHOT</version>
+    </parent>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.github.tornaia</groupId>
+            <artifactId>panama-tutorial-004-cpp</artifactId>
+            <version>${project.version}</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/target/jar/helloworldcpp.h.jar</systemPath>
+        </dependency>
+    </dependencies>
+</project>

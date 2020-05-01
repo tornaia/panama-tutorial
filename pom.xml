@@ -46,6 +46,7 @@
         <module>panama-tutorial-001</module>
         <module>panama-tutorial-002</module>
         <module>panama-tutorial-003</module>
+        <module>panama-tutorial-004</module>
     </modules>
 
     <build>
