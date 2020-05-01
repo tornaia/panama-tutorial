@@ -26,6 +26,7 @@
 
 * 001 - Java calls C void method without parameters, C writes to console
 * 002 - C returns the sum of the two passed int parameters
+* 003 - C returns the center Point of two Point structures
 
 #### More to read
 

@@ -3,9 +3,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>panama-tutorial-002</artifactId>
+    <artifactId>panama-tutorial-003</artifactId>
     <version>0.1-SNAPSHOT</version>
-    <name>Panama Tutorial 002</name>
+    <name>Panama Tutorial 003</name>
 
     <parent>
         <groupId>com.github.tornaia</groupId>
@@ -16,10 +16,10 @@
     <dependencies>
         <dependency>
             <groupId>com.github.tornaia</groupId>
-            <artifactId>panama-tutorial-002-c</artifactId>
+            <artifactId>panama-tutorial-003-c</artifactId>
             <version>${project.version}</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/lib/target/jar/sum.h.jar</systemPath>
+            <systemPath>${project.basedir}/lib/target/jar/center.h.jar</systemPath>
         </dependency>
     </dependencies>
 </project>

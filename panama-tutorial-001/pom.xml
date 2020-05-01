@@ -19,7 +19,7 @@
             <artifactId>panama-tutorial-001-c</artifactId>
             <version>${project.version}</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/src/main/resources/helloworld.h.jar</systemPath>
+            <systemPath>${project.basedir}/lib/target/jar/helloworld.h.jar</systemPath>
         </dependency>
     </dependencies>
 </project>

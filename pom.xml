@@ -36,8 +36,8 @@
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
         <maven-surefire-plugin.version>3.0.0-M4</maven-surefire-plugin.version>
 
-        <maven.compiler.source>14</maven.compiler.source>
-        <maven.compiler.target>14</maven.compiler.target>
+        <maven.compiler.source>15</maven.compiler.source>
+        <maven.compiler.target>15</maven.compiler.target>
 
         <junit.version>4.12</junit.version>
     </properties>
@@ -45,6 +45,7 @@
     <modules>
         <module>panama-tutorial-001</module>
         <module>panama-tutorial-002</module>
+        <module>panama-tutorial-003</module>
     </modules>
 
     <build>
@@ -57,7 +58,6 @@
                     <configuration>
                         <compilerArgs>
                             <arg>-Xlint:all,-options,-path</arg>
-                            <arg>--add-exports java.base/jdk.internal.foreign=ALL-UNNAMED</arg>
                             <arg>--enable-preview</arg>
                         </compilerArgs>
                         <showWarnings>true</showWarnings>
@@ -69,7 +69,7 @@
                     <artifactId>maven-surefire-plugin</artifactId>
                     <version>${maven-surefire-plugin.version}</version>
                     <configuration>
-                        <argLine>--enable-preview</argLine>
+                        <argLine>--enable-preview -Dforeign.restricted=permit</argLine>
                     </configuration>
                 </plugin>
             </plugins>
