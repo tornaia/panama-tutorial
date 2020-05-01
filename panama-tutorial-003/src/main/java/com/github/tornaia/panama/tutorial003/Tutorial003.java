@@ -7,7 +7,7 @@ import jdk.incubator.foreign.MemorySegment;
 
 public class Tutorial003 {
 
-    public static Point center(Point p0, Point p1) {
+    public static Point centerC(Point p0, Point p1) {
         try (MemorySegment m0 = MemorySegment.allocateNative(CPoint.$LAYOUT());
              MemorySegment m1 = MemorySegment.allocateNative(CPoint.$LAYOUT())) {
             CPoint.x$VH().set(m0.baseAddress(), p0.getX());
@@ -21,5 +21,9 @@ public class Tutorial003 {
         } catch (Throwable t) {
             throw new IllegalStateException("Must not happen", t);
         }
+    }
+
+    public static Point centerJava(Point p0, Point p1) {
+        return new Point((p0.getX() + p1.getX()) / 2D, (p0.getY() + p1.getY()) / 2D);
     }
 }
