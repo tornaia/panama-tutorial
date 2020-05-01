@@ -33,3 +33,4 @@
 
 * http://cr.openjdk.java.net/~mcimadamore/panama/jextract_distilled.html
 * https://github.com/openjdk/panama-foreign/blob/foreign-jextract/doc/panama_jextract.md
+* http://cr.openjdk.java.net/~mcimadamore/panama/panama-binder-v3.html
