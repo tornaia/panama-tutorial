@@ -2,6 +2,12 @@
 
 "I am always ready to learn, but I do not always like to be taught." – Winston Churchill
 
+#### Tutorials
+
+* 001 - Java calls C void method without parameters, C writes to console
+* 002 - C returns the sum of the two passed int parameters
+* 003 - C returns the center Point of two Point structures
+
 #### Prerequisites
 
 * Windows 10 x64 
@@ -21,12 +27,6 @@
 * Git clone https://github.com/openjdk/panama-foreign.git
 * bash configure
 * make images
-
-#### Tutorials
-
-* 001 - Java calls C void method without parameters, C writes to console
-* 002 - C returns the sum of the two passed int parameters
-* 003 - C returns the center Point of two Point structures
 
 #### More to read
 
