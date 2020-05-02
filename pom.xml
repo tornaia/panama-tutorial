@@ -40,6 +40,9 @@
         <maven.compiler.target>15</maven.compiler.target>
 
         <junit.version>4.12</junit.version>
+
+        <project.specific.native.jar.path>specified-in-sub-modules</project.specific.native.jar.path>
+        <project.specific.native.library.path>specified-in-sub-modules</project.specific.native.library.path>
     </properties>
 
     <modules>
@@ -70,7 +73,7 @@
                     <artifactId>maven-surefire-plugin</artifactId>
                     <version>${maven-surefire-plugin.version}</version>
                     <configuration>
-                        <argLine>--enable-preview -Dforeign.restricted=permit</argLine>
+                        <argLine>--enable-preview -Dforeign.restricted=permit -Djava.library.path=${project.specific.native.library.path}</argLine>
                     </configuration>
                 </plugin>
             </plugins>
