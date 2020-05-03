@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>panama-tutorial-005</artifactId>
+    <version>0.1-SNAPSHOT</version>
+    <name>Panama Tutorial 005</name>
+
+    <parent>
+        <groupId>com.github.tornaia</groupId>
+        <artifactId>panama-tutorial-parent</artifactId>
+        <version>0.1-SNAPSHOT</version>
+    </parent>
+
+    <properties>
+        <project.specific.native.jar.path>${project.basedir}\lib\target\jar\helloworldwinrt.h.jar</project.specific.native.jar.path>
+        <project.specific.native.library.path>${project.basedir}\lib\helloworldwinrt\target</project.specific.native.library.path>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>${project.artifactId}-native</artifactId>
+            <version>${project.version}</version>
+            <scope>system</scope>
+            <systemPath>${project.specific.native.jar.path}</systemPath>
+        </dependency>
+    </dependencies>
+</project>

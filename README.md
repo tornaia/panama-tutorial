@@ -1,13 +1,16 @@
 ### Panama Tutorial
 
+**Warning**: I'm quite new to C/C++ and programming Windows! It is likely that I'm following bad practices and giving just inappropriate examples. Please let me know if you have any questions, comments or suggestions!
+
 "I am always ready to learn, but I do not always like to be taught." – Winston Churchill
 
 #### Tutorials
 
-* 001 - Java calls C void method without parameters, C writes to console
-* 002 - C returns the sum of the two passed int parameters
-* 003 - C returns the center Point of two Point structs
-* 004 - Java calls C++ main (default entry point) and main2 without parameters, avoid name mangling, C++ writes to stdout
+* 001 - Java calls C void method without parameters, C writes to console - gcc
+* 002 - C returns the sum of the two passed int parameters - gcc
+* 003 - C returns the center Point of two Point structs - gcc
+* 004 - Java calls C++ main (default entry point) and main2 without parameters, avoid name mangling, C++ writes to stdout - g++
+* 005 - Java calls C++/WinRT and writes device names to stdout by using Windows Runtime (WinRT) - Visual Studio 2019 solution and MSBuild
 
 #### Prerequisites
 

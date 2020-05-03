@@ -50,6 +50,7 @@
         <module>panama-tutorial-002</module>
         <module>panama-tutorial-003</module>
         <module>panama-tutorial-004</module>
+        <module>panama-tutorial-005</module>
     </modules>
 
     <build>
