@@ -33,4 +33,12 @@ public final class Point {
         return Double.compare(point.x, x) == 0 &&
                 Double.compare(point.y, y) == 0;
     }
+
+    @Override
+    public String toString() {
+        return "Point{" +
+                "x=" + x +
+                ", y=" + y +
+                '}';
+    }
 }

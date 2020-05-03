@@ -10,7 +10,7 @@
 * 002 - C returns the sum of the two passed int parameters - gcc
 * 003 - C returns the center Point of two Point structs - gcc
 * 004 - Java calls C++ main (default entry point) and main2 without parameters, avoid name mangling, C++ writes to stdout - g++
-* 005 - Java calls C++/WinRT and writes device names to stdout by using Windows Runtime (WinRT) - Visual Studio 2019 solution and MSBuild
+* 005 - Java calls C++/WinRT and prints number of devices to stdout by using Windows Runtime (WinRT) - Visual Studio 2019 solution and MSBuild
 
 #### Prerequisites
 
