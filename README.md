@@ -37,3 +37,4 @@ Only if you want to do it on your own. Since the actual OpenJDK-panama build is 
 * https://github.com/openjdk/panama-foreign/blob/foreign-jextract/doc/panama_jextract.md
 * http://cr.openjdk.java.net/~mcimadamore/panama/jextract_distilled.html
 * http://cr.openjdk.java.net/~mcimadamore/panama/panama-binder-v3.html
+* https://www.nirsoft.net/utils/dll_export_viewer.html
