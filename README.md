@@ -15,7 +15,9 @@
 #### Prerequisites
 
 * Windows 10 x64 
-* Build OpenJDK-panama (01.05.2020) or OpenJDK 14 build 14-panama+1-15 (https://jdk.java.net/panama/)
+* OpenJDK-panama (01.05.2020) or OpenJDK 14 build 14-panama+1-15 (https://jdk.java.net/panama/)
+* Visual Studio 2019 Community Edition (https://visualstudio.microsoft.com/vs/community/)
+	* install default, ".NET desktop development", "Desktop development with C++" and "Universal Windows Platform development" packages
 * Mingw-w64 (http://mingw-w64.org/)
 * LLVM (https://releases.llvm.org/download.html)
 
@@ -29,7 +31,7 @@ Only if you want to do it on your own. Since the actual OpenJDK-panama build is 
 * Cygwin (https://www.cygwin.com/)
 	* install default, git, autoconf, make, unzip and zip packages
 * Visual Studio 2017 Community Edition (https://www.techspot.com/downloads/downloadnow/6278/?evp=ec1cdb914a1b435daaf013a4a084b093&file=1)
-	* install default and "Desktop development with C++" package
+	* install default and "Desktop development with C++" packages
 * OpenJDK 14.0.1 (https://jdk.java.net/14/) as Bootstrap JDK
 * git clone https://github.com/openjdk/panama-foreign.git
 * bash configure
