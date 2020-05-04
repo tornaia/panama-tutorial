@@ -39,7 +39,8 @@ Only if you want to do it on your own. Since the actual OpenJDK-panama build is 
 
 #### More to read
 
-* https://github.com/openjdk/panama-foreign/blob/foreign-jextract/doc/panama_jextract.md
+* https://cr.openjdk.java.net/~jrose/panama/isthmus-in-the-vm-2014.html
 * http://cr.openjdk.java.net/~mcimadamore/panama/jextract_distilled.html
 * http://cr.openjdk.java.net/~mcimadamore/panama/panama-binder-v3.html
+* https://github.com/openjdk/panama-foreign/blob/foreign-jextract/doc/panama_jextract.md
 * https://www.nirsoft.net/utils/dll_export_viewer.html
