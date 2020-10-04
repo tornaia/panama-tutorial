@@ -5,6 +5,7 @@
 #include <iostream>
 #include "winrt/base.h"
 #include "winrt/Windows.Devices.Enumeration.h"
+#include <winrt/Windows.Foundation.Collections.h>
 
 using namespace winrt;
 using namespace winrt::Windows::Devices::Enumeration;

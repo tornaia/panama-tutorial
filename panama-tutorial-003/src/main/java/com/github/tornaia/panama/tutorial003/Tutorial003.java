@@ -2,7 +2,6 @@ package com.github.tornaia.panama.tutorial003;
 
 import com.github.tornaia.panama.tutorial003.api.Point;
 import com.github.tornaia.panama.tutorial003.c.center_h;
-import com.github.tornaia.panama.tutorial003.c.center_h.CPoint;
 import jdk.incubator.foreign.MemorySegment;
 
 public class Tutorial003 {
@@ -12,20 +11,20 @@ public class Tutorial003 {
         Point p0 = new Point(Double.parseDouble(args[0]), Double.parseDouble(args[1]));
         Point p1 = new Point(Double.parseDouble(args[2]), Double.parseDouble(args[3]));
         Point center = centerC(p0, p1);
-        System.out.println(String.format("Center of %s and %s is %s", p0, p1, center));
+        System.out.printf("Center of %s and %s is %s%n", p0, p1, center);
         System.out.println("End");
     }
 
     public static Point centerC(Point p0, Point p1) {
-        try (MemorySegment m0 = MemorySegment.allocateNative(CPoint.$LAYOUT());
-             MemorySegment m1 = MemorySegment.allocateNative(CPoint.$LAYOUT())) {
-            CPoint.x$VH().set(m0.address(), p0.getX());
-            CPoint.y$VH().set(m0.address(), p0.getY());
-            CPoint.x$VH().set(m1.address(), p1.getX());
-            CPoint.y$VH().set(m1.address(), p1.getY());
+        try (MemorySegment m0 = MemorySegment.allocateNative(center_h.Point.$LAYOUT());
+             MemorySegment m1 = MemorySegment.allocateNative(center_h.Point.$LAYOUT())) {
+            center_h.Point.x$VH().set(m0, p0.getX());
+            center_h.Point.y$VH().set(m0, p0.getY());
+            center_h.Point.x$VH().set(m1, p1.getX());
+            center_h.Point.y$VH().set(m1, p1.getY());
             MemorySegment pc = (MemorySegment) center_h.center$MH().invokeExact(m0, m1);
-            double cx = CPoint.x$get(pc.address());
-            double cy = CPoint.y$get(pc.address());
+            double cx = center_h.Point.x$get(pc);
+            double cy = center_h.Point.y$get(pc);
             return new Point(cx, cy);
         } catch (Throwable t) {
             throw new IllegalStateException("Must not happen", t);

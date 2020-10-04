@@ -1,5 +1,5 @@
-SET PATH=c:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\;c:\Program Files\Java\jdk-panama-nightly\bin\;%PATH%
-SET JAVA_HOME=c:\Program Files\Java\jdk-panama-nightly\
+SET PATH=c:\Program Files\Java\jdk-16\bin\;%PATH%
+SET JAVA_HOME=c:\Program Files\Java\jdk-16\
 
 rd /s /q target
 rd /s /q helloworldwinrt\target
@@ -7,8 +7,8 @@ rd /s /q helloworldwinrt\x64
 
 MSBuild.exe helloworldwinrt.sln /p:OutDir=target\
 
-jextract --source -d target\jextract\classes --target-package com.github.tornaia.panama.tutorial005.cpp -I "C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0" -I helloworldwinrt\target -l helloworldwinrt helloworldwinrt\helloworldwinrt.h
-jextract -d target\jextract\classes --target-package com.github.tornaia.panama.tutorial005.cpp -I "C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0" -I helloworldwinrt\target -l helloworldwinrt helloworldwinrt\helloworldwinrt.h
+jextract --source -d target\jextract\classes --target-package com.github.tornaia.panama.tutorial005.cpp -I "C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0" -I helloworldwinrt\target -l helloworldwinrt helloworldwinrt\helloworldwinrt.h
+jextract -d target\jextract\classes --target-package com.github.tornaia.panama.tutorial005.cpp -I "C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0" -I helloworldwinrt\target -l helloworldwinrt helloworldwinrt\helloworldwinrt.h
 
 mkdir target\jar
 jar -cvf target\jar\helloworldwinrt.h.jar -C target\jextract\classes .
