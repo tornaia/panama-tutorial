@@ -1,5 +1,5 @@
-SET PATH=c:\Program Files\Java\jdk-panama-nightly\bin\;%PATH%
-SET JAVA_HOME=c:\Program Files\Java\jdk-panama-nightly\
+SET PATH=c:\Program Files\Java\jdk-16\bin\;%PATH%
+SET JAVA_HOME=c:\Program Files\Java\jdk-16\
 
 rd /s /q target
 
